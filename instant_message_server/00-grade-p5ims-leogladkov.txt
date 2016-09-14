@@ -1,0 +1,3265 @@
+leogladkov p5ims grade: 104.70/110
+
+graded revision 281 of repository
+https://phoenixforge.cs.uchicago.edu/svn/leogladkov-cs154-2015/p5ims
+
+Summary of the new testing/00-GRADER.sh script follows.
+
+p5ims scores per category:
+Persistent Database ... 
+      1/1: DB-01.sh
+    + 1/1: DB-02.sh
+    + 1/1: DB-03.sh
+    ----------------------
+    = 3.00: summary fractional score for Persistent Database
+    / 3: number of Persistent Database tests
+    = 1.00: normalized fractional score for Persistent Database
+    * 20: possible points for Persistent Database
+    ----------------------
+... = 20.00/20 points for Persistent Database
+Register ... 
+      3/3: REG-01.sh
+    + 2/2: REG-03.sh
+    + 4/4: REG-05.sh
+    + 1/1: REG-06.sh
+    ----------------------
+    = 4.00: summary fractional score for Register
+    / 4: number of Register tests
+    = 1.00: normalized fractional score for Register
+    * 10: possible points for Register
+    ----------------------
+... = 10.00/10 points for Register
+Login ... 
+      4/4: LOGIN-01.sh
+    + 1/1: LOGIN-05.sh
+    ----------------------
+    = 2.00: summary fractional score for Login
+    / 2: number of Login tests
+    = 1.00: normalized fractional score for Login
+    * 10: possible points for Login
+    ----------------------
+... = 10.00/10 points for Login
+Logout ... 
+      5/5: LOGOUT-01.sh
+    + 1/1: LOGOUT-04.sh
+    + 2/2: LOGOUT-05.sh
+    ----------------------
+    = 3.00: summary fractional score for Logout
+    / 3: number of Logout tests
+    = 1.00: normalized fractional score for Logout
+    * 10: possible points for Logout
+    ----------------------
+... = 10.00/10 points for Logout
+Adding/Removing friends ... 
+      1/1: ADD_RM_FRIENDS-05.sh
+    + 1/1: ADD_RM_FRIENDS-06.sh
+    + 1/1: ADD_RM_FRIENDS-07.sh
+    + 1/1: ADD_RM_FRIENDS-08.sh
+    + 1/1: ADD_RM_FRIENDS-09.sh
+    + 1/1: ADD_RM_FRIENDS-10.sh
+    + 1/1: ADD_RM_FRIENDS-11.sh
+    ----------------------
+    = 7.00: summary fractional score for Adding/Removing friends
+    / 7: number of Adding/Removing friends tests
+    = 1.00: normalized fractional score for Adding/Removing friends
+    * 10: possible points for Adding/Removing friends
+    ----------------------
+... = 10.00/10 points for Adding/Removing friends
+Friend status messages ... 
+      2/2: FRIEND_STATUS-01.sh
+    + 2/2: FRIEND_STATUS-02.sh
+    + 2/2: FRIEND_STATUS-03.sh
+    + 2/2: FRIEND_STATUS-04.sh
+    + 2/2: FRIEND_STATUS-05.sh
+    + 4/4: FRIEND_STATUS-06.sh
+    + 4/4: FRIEND_STATUS-07.sh
+    + 4/4: FRIEND_STATUS-08.sh
+    + 5/5: FRIEND_STATUS-09.sh
+    + 4/4: FRIEND_STATUS-10.sh
+    ----------------------
+    = 10.00: summary fractional score for Friend status messages
+    / 10: number of Friend status messages tests
+    = 1.00: normalized fractional score for Friend status messages
+    * 10: possible points for Friend status messages
+    ----------------------
+... = 10.00/10 points for Friend status messages
+Sending IMs ... 
+      1/1: FRIEND_IM-06.sh
+    + 2/2: FRIEND_IM-07.sh
+    + 1/1: FRIEND_IM-03.sh
+    + 1/1: FRIEND_IM-04.sh
+    ----------------------
+    = 4.00: summary fractional score for Sending IMs
+    / 4: number of Sending IMs tests
+    = 1.00: normalized fractional score for Sending IMs
+    * 10: possible points for Sending IMs
+    ----------------------
+... = 10.00/10 points for Sending IMs
+Error messages ... 
+      3/3: REG-02.sh
+    + 1/1: REG-04.sh
+    + 3/4: REG-07.sh
+    + 1/1: LOGIN-02.sh
+    + 1/1: LOGIN-03.sh
+    + 2/2: LOGIN-04.sh
+    + 1/1: LOGOUT-02.sh
+    + 6/6: LOGOUT-03.sh
+    + 1/1: ADD_RM_FRIENDS-01.sh
+    + 1/1: ADD_RM_FRIENDS-02.sh
+    + 1/1: ADD_RM_FRIENDS-03.sh
+    + 1/1: ADD_RM_FRIENDS-04.sh
+    + 1/1: FRIEND_IM-01.sh
+    + 1/1: FRIEND_IM-02.sh
+    + 1/1: FRIEND_IM-05.sh
+    ----------------------
+    = 14.75: summary fractional score for Error messages
+    / 15: number of Error messages tests
+    = .98: normalized fractional score for Error messages
+    * 15: possible points for Error messages
+    ----------------------
+... = 14.70/15 points for Error messages
+Clean+Prompt Quit ... 
+      0/5: QUIT.sh
+    ----------------------
+    = 0: summary fractional score for Clean+Prompt Quit
+    / 1: number of Clean+Prompt Quit tests
+    = 0: normalized fractional score for Clean+Prompt Quit
+    * 5: possible points for Clean+Prompt Quit
+    ----------------------
+... = 0/5 points for Clean+Prompt Quit
+
+
+10/10 points for compiling cleanly with -Wall -Werror
+Total points: 104.70/110
+
+
+Verbose output of testing/00-GRADER.sh script follows.
+########################################
+Will run tests:
+#########                       DB-01.sh 0/49
+#########                       DB-02.sh 1/49
+#########                       DB-03.sh 2/49
+#########                      REG-01.sh 3/49
+#########                      REG-02.sh 4/49
+#########                      REG-03.sh 5/49
+#########                      REG-04.sh 6/49
+#########                      REG-05.sh 7/49
+#########                      REG-06.sh 8/49
+#########                      REG-07.sh 9/49
+#########                    LOGIN-01.sh 10/49
+#########                    LOGIN-02.sh 11/49
+#########                    LOGIN-03.sh 12/49
+#########                    LOGIN-04.sh 13/49
+#########                    LOGIN-05.sh 14/49
+#########                   LOGOUT-01.sh 15/49
+#########                   LOGOUT-02.sh 16/49
+#########                   LOGOUT-03.sh 17/49
+#########                   LOGOUT-04.sh 18/49
+#########                   LOGOUT-05.sh 19/49
+#########           ADD_RM_FRIENDS-01.sh 20/49
+#########           ADD_RM_FRIENDS-02.sh 21/49
+#########           ADD_RM_FRIENDS-03.sh 22/49
+#########           ADD_RM_FRIENDS-04.sh 23/49
+#########           ADD_RM_FRIENDS-05.sh 24/49
+#########           ADD_RM_FRIENDS-06.sh 25/49
+#########           ADD_RM_FRIENDS-07.sh 26/49
+#########           ADD_RM_FRIENDS-08.sh 27/49
+#########           ADD_RM_FRIENDS-09.sh 28/49
+#########           ADD_RM_FRIENDS-10.sh 29/49
+#########           ADD_RM_FRIENDS-11.sh 30/49
+#########            FRIEND_STATUS-01.sh 31/49
+#########            FRIEND_STATUS-02.sh 32/49
+#########            FRIEND_STATUS-03.sh 33/49
+#########            FRIEND_STATUS-04.sh 34/49
+#########            FRIEND_STATUS-05.sh 35/49
+#########            FRIEND_STATUS-06.sh 36/49
+#########            FRIEND_STATUS-07.sh 37/49
+#########            FRIEND_STATUS-08.sh 38/49
+#########            FRIEND_STATUS-09.sh 39/49
+#########            FRIEND_STATUS-10.sh 40/49
+#########                FRIEND_IM-01.sh 41/49
+#########                FRIEND_IM-02.sh 42/49
+#########                FRIEND_IM-03.sh 43/49
+#########                FRIEND_IM-04.sh 44/49
+#########                FRIEND_IM-05.sh 45/49
+#########                FRIEND_IM-06.sh 46/49
+#########                FRIEND_IM-07.sh 47/49
+#########                        QUIT.sh 48/49
+########################################
+
+Running tests ...
+########################################
+#########                       DB-01.sh 0/49
+########################################
+=== cp db-test1.txt db-test2.txt
+vvvvvvvvvvvvvvvvvvvvv cndb(db-test2.txt) before starting ims
+0 users:
+^^^^^^^^^^^^^^^^^^^^^
+=== (tail -f /dev/null) | ../ims -p 5021 -d db-test2.txt -i 4 &> log.txt &
+=== sleep 1
+=== rm -f db-test2.txt
+=== sleep 6 (waiting for db-test2.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv cndb(db-test2.txt), after running ../ims
+0 users:
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv difference between canonical(input) and canonical(output)
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST DB: 1
+./DB-01.sh: line 10: 20465 Killed                  ( tail -f /dev/null )
+     20466                       | $IMS -p $PORT -d $DB2 -i $PAUSE &>$LOG
+########################################
+#########                       DB-02.sh 1/49
+########################################
+=== cp db-test1.txt db-test2.txt
+vvvvvvvvvvvvvvvvvvvvv cndb(db-test2.txt) before starting ims
+8 users:
+UU_000881
+- UU_011882
+- UU_014032
+- UU_024801 requested
+.
+UU_006140
+- UU_014032
+.
+UU_011882
+- UU_000881
+- UU_014032
+.
+UU_014032
+- UU_000881
+- UU_006140
+- UU_011882
+- UU_022770
+- UU_024801 toanswer
+.
+UU_022669
+.
+UU_022770
+- UU_014032
+- UU_024801 toanswer
+- UU_025604 requested
+.
+UU_024801
+- UU_000881 toanswer
+- UU_014032 requested
+- UU_022770 requested
+- UU_025604 toanswer
+.
+UU_025604
+- UU_022770 toanswer
+- UU_024801 requested
+.
+^^^^^^^^^^^^^^^^^^^^^
+=== (tail -f /dev/null) | ../ims -p 6198 -d db-test2.txt -i 4 &> log.txt &
+=== sleep 1
+=== rm -f db-test2.txt
+=== sleep 6 (waiting for db-test2.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv cndb(db-test2.txt), after running ../ims
+8 users:
+UU_000881
+- UU_011882
+- UU_014032
+- UU_024801 requested
+.
+UU_006140
+- UU_014032
+.
+UU_011882
+- UU_000881
+- UU_014032
+.
+UU_014032
+- UU_000881
+- UU_006140
+- UU_011882
+- UU_022770
+- UU_024801 toanswer
+.
+UU_022669
+.
+UU_022770
+- UU_014032
+- UU_024801 toanswer
+- UU_025604 requested
+.
+UU_024801
+- UU_000881 toanswer
+- UU_014032 requested
+- UU_022770 requested
+- UU_025604 toanswer
+.
+UU_025604
+- UU_022770 toanswer
+- UU_024801 requested
+.
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv difference between canonical(input) and canonical(output)
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST DB: 1
+./DB-02.sh: line 10: 20495 Killed                  ( tail -f /dev/null )
+     20496                       | $IMS -p $PORT -d $DB2 -i $PAUSE &>$LOG
+########################################
+#########                       DB-03.sh 2/49
+########################################
+=== cp db-test1.txt db-test2.txt
+vvvvvvvvvvvvvvvvvvvvv cndb(db-test2.txt) before starting ims
+8 users:
+UU_004439
+- UU_008843
+- UU_025265 requested
+- UU_028643
+.
+UU_004796
+- UU_028643
+.
+UU_008843
+- UU_004439
+- UU_028643
+.
+UU_009020
+- UU_025265 toanswer
+- UU_025662 requested
+- UU_028643
+.
+UU_019323
+.
+UU_025265
+- UU_004439 toanswer
+- UU_009020 requested
+- UU_025662 toanswer
+- UU_028643 requested
+.
+UU_025662
+- UU_009020 toanswer
+- UU_025265 requested
+.
+UU_028643
+- UU_004439
+- UU_004796
+- UU_008843
+- UU_009020
+- UU_025265 toanswer
+.
+^^^^^^^^^^^^^^^^^^^^^
+=== db-test2.txt time0 = 07:01:31
+=== sleep 4 before running server
+=== (tail -f /dev/null) | ../ims -p 7359 -d db-test2.txt -i 10 &> log.txt &
+=== sleep 1 to let server re-write database
+=== killing server
+./DB-03.sh: line 114: 20529 Killed                  ( tail -f /dev/null )
+     20530                       | $IMS -p $PORT -d $DB2 -i 10 &>$LOG
+=== db-test2.txt time1 = 07:01:35
+P5IMS TEST DB: 1
+########################################
+#########                      REG-01.sh 3/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+register UU_003408
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:6724
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_003408
+sending to server: "1 1 UU_003408" (OP REGISTER UU_003408)
+imc(not logged in)> sl
+server response 0: "2 1 UU_003408" (ACK REGISTER UU_003408)
+eep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+0 users:
+UU_003408
+.
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST REGISTER: ACK CONNECT 1
+P5IMS TEST REGISTER: ACK REGISTER 1
+P5IMS TEST REGISTER: INDB 1
+########################################
+#########                      REG-02.sh 4/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+register WAYTOOOOOLONGUSERNAME
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+register JUSTALLOOWEDUSERNAME
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:6308
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register WAYTOOOOOLONGUSERNAME
+sending to server: "1 1 WAYTOOOOOLONGUSERNAME" (OP REGISTER WAYTOOOOOLONGUSERNAME)
+imc(not logged in)> s
+server response 0: "3 3" (ERROR BAD_COMMAND)
+
+ !!! ERROR BAD_COMMAND !!!
+leep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:6308
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register JUSTALLOOWEDUSERNAME
+sending to server: "1 1 JUSTALLOOWEDUSERNAME" (OP REGISTER JUSTALLOOWEDUSERNAME)
+imc(not logged in)> 
+server response 0: "2 1 JUSTALLOOWEDUSERNAME" (ACK REGISTER JUSTALLOOWEDUSERNAME)
+sleep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+0 users:
+JUSTALLOOWEDUSERNAME
+.
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST REGISTER: ACK REGISTER 1
+P5IMS TEST REGISTER: ERROR_BAD_COMMAND 1
+P5IMS TEST REGISTER: INDB 1
+########################################
+#########                      REG-03.sh 5/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+register UU_020483
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+0 users:
+UU_020483
+.
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:5941
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_020483
+sending to server: "1 1 UU_020483" (OP REGISTER UU_020483)
+imc(not logged in)> sl
+server response 0: "2 1 UU_020483" (ACK REGISTER UU_020483)
+eep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST REGISTER: ACK REGISTER 1 
+P5IMS TEST REGISTER: INDB 1
+########################################
+#########                      REG-04.sh 6/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+register alice
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:6887
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register alice
+sending to server: "1 1 alice" (OP REGISTER alice)
+imc(not logged in)> sle
+server response 0: "3 1 alice" (ERROR USER_EXISTS alice)
+
+ !!! ERROR USER_EXISTS alice !!!
+ep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST REGISTER: ERROR USER_EXISTS 1
+########################################
+#########                      REG-05.sh 7/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+register alice
+sleep 3
+===============
+register bob
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:6486
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register alice
+sending to server: "1 1 alice" (OP REGISTER alice)
+imc(not logged in)> s
+server response 0: "2 1 alice" (ACK REGISTER alice)
+leep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+==============
+Connected to localhost:6486
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register bob
+sending to server: "1 1 bob" (OP REGISTER bob)
+imc(not logged in)> sle
+server response 0: "2 1 bob" (ACK REGISTER bob)
+ep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+0 users:
+bob
+.
+alice
+.
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST REGISTER: ACK REGISTER 1
+P5IMS TEST REGISTER: INDB 1
+########################################
+#########                      REG-06.sh 8/49
+########################################
+vvvvvvvvvvvvvvvvvv input in1.txt
+register UU_008574
+sleep 3
+^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvv input in2.txt
+register UU_004176
+sleep 3
+^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvv input in3.txt
+register UU_024483
+sleep 3
+^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvv input in4.txt
+register UU_003391
+sleep 3
+^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvv input in5.txt
+register UU_015997
+sleep 3
+^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvv input in6.txt
+register UU_017072
+sleep 3
+^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvv input in7.txt
+register UU_027169
+sleep 3
+^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvv input in8.txt
+register UU_031851
+sleep 3
+^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvv input in9.txt
+register UU_017414
+sleep 3
+^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvv input in10.txt
+register UU_020743
+sleep 3
+^^^^^^^^^^^^^^^^^^
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+0 users:
+UU_008574
+.
+UU_004176
+.
+UU_024483
+.
+UU_003391
+.
+UU_027169
+.
+UU_015997
+.
+UU_017072
+.
+UU_031851
+.
+UU_017414
+.
+UU_020743
+.
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST REGISTER: INDB 1
+########################################
+#########                      REG-07.sh 9/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+register UU_010884
+login UU_010884
+register UU_007665
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:6690
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_010884
+sending to server: "1 1 UU_010884" (OP REGISTER UU_010884)
+imc(not logged in)> 
+server response 0: "2 1 UU_010884" (ACK REGISTER UU_010884)
+login UU_010884
+sending to server: "1 2 UU_010884" (OP LOGIN UU_010884)
+
+server response 0: "2 2 UU_010884" (ACK LOGIN UU_010884)
+imc(not logged in)> register UU_007665
+sending to server: "1 1 UU_007665" (OP REGISTER UU_007665)
+imc(UU_010884)> s
+server response 0: "2 1 UU_007665" (ACK REGISTER UU_007665)
+leep 3
+sleep(3) ... 
+imc(UU_010884)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+0 users:
+UU_010884
+.
+UU_007665
+.
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST REGISTER: ACK REGISTER 1
+P5IMS TEST REGISTER: ACK LOGIN 1
+P5IMS TEST REGISTER: INDB 1
+P5IMS TEST REGISTER: ERROR CLIENT_BOUND 0
+########################################
+#########                    LOGIN-01.sh 10/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+register UU_008072
+login UU_008072
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:5235
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_008072
+sending to server: "1 1 UU_008072" (OP REGISTER UU_008072)
+imc(not logged in)> l
+server response 0: "2 1 UU_008072" (ACK REGISTER UU_008072)
+ogin UU_008072
+sending to server: "1 2 UU_008072" (OP LOGIN UU_008072)
+imc(not logged in)> 
+server response 0: "2 2 UU_008072" (ACK LOGIN UU_008072)
+sleep 3
+sleep(3) ... 
+imc(UU_008072)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+3 users:
+alice
+- bob toanswer
+.
+david
+- bob
+.
+bob
+- alice requested
+- david
+.
+UU_008072
+.
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST LOGIN: ACK CONNECT 1
+P5IMS TEST LOGIN: ACK REGISTER 1
+P5IMS TEST LOGIN: ACK LOGIN 1
+P5IMS TEST LOGIN: INDB 1
+########################################
+#########                    LOGIN-02.sh 11/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login anna
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:7764
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login anna
+sending to server: "1 2 anna" (OP LOGIN anna)
+imc(not logged in)> sl
+server response 0: "3 4" (ERROR USER_DOES_NOT_EXIST)
+
+ !!! ERROR USER_DOES_NOT_EXIST !!!
+eep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST LOGIN: ERROR USER_DOES_NOT_EXIST 1
+########################################
+#########                    LOGIN-03.sh 12/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login david
+login david
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:7504
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login david
+sending to server: "1 2 david" (OP LOGIN david)
+imc(not logged in)> 
+server response 0: "2 2 david" (ACK LOGIN david)
+login david
+sending to server: "1 2 david" (OP LOGIN david)
+imc(david)> 
+server response 0: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+s
+ *** friend bob: ACTIVE_NOT ***
+leep 3
+sleep(3) ... 
+
+server response 0: "3 2 david" (ERROR CLIENT_BOUND david)
+
+ !!! ERROR CLIENT_BOUND david !!!
+imc(david)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST LOGIN: ERROR CLIENT_BOUND 1
+########################################
+#########                    LOGIN-04.sh 13/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login anna
+sleep 6
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+sleep 3
+login anna
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:5934
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login anna
+sending to server: "1 2 anna" (OP LOGIN anna)
+imc(not logged in)> s
+server response 0: "2 2 anna" (ACK LOGIN anna)
+leep 6
+sleep(6) ... 
+imc(anna)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:5934
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> sleep 3
+sleep(3) ... 
+imc(not logged in)> login anna
+sending to server: "1 2 anna" (OP LOGIN anna)
+imc(not logged in)> sle
+server response 0: "3 5 anna" (ERROR USER_ALREADY_ACTIVE anna)
+
+ !!! ERROR USER_ALREADY_ACTIVE anna !!!
+ep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST LOGIN: ACK LOGIN 1
+P5IMS TEST LOGIN: ERROR USER_ALREADY_ACTIVE 1
+########################################
+#########                    LOGIN-05.sh 14/49
+########################################
+vvvvvvvvv input in1.txt
+register UU_023866
+login UU_023866
+sleep 3
+^^^^^^^^^
+vvvvvvvvv input in2.txt
+register UU_004176
+login UU_004176
+sleep 3
+^^^^^^^^^
+vvvvvvvvv input in3.txt
+register UU_019120
+login UU_019120
+sleep 3
+^^^^^^^^^
+vvvvvvvvv input in4.txt
+register UU_021560
+login UU_021560
+sleep 3
+^^^^^^^^^
+vvvvvvvvv input in5.txt
+register UU_032048
+login UU_032048
+sleep 3
+^^^^^^^^^
+vvvvvvvvv input in6.txt
+register UU_017721
+login UU_017721
+sleep 3
+^^^^^^^^^
+vvvvvvvvv input in7.txt
+register UU_013900
+login UU_013900
+sleep 3
+^^^^^^^^^
+vvvvvvvvv input in8.txt
+register UU_014914
+login UU_014914
+sleep 3
+^^^^^^^^^
+vvvvvvvvv input in9.txt
+register UU_011246
+login UU_011246
+sleep 3
+^^^^^^^^^
+vvvvvvvvv input in10.txt
+register UU_030299
+login UU_030299
+sleep 3
+^^^^^^^^^
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvv output out1.txt
+Connected to localhost:6855
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_023866
+sending to server: "1 1 UU_023866" (OP REGISTER UU_023866)
+imc(not logged in)> login UU_023
+server response 0: "2 1 UU_023866" (ACK REGISTER UU_023866)
+866
+sending to server: "1 2 UU_023866" (OP LOGIN UU_023866)
+imc(not logged in)> sleep 3
+sleep(3) ... 
+
+server response 0: "2 2 UU_023866" (ACK LOGIN UU_023866)
+imc(UU_023866)> 
+Got EOF; quitting
+^^^^^^^^^
+vvvvvvvvv output out2.txt
+Connected to localhost:6855
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_004176
+sending to server: "1 1 UU_004176" (OP REGISTER UU_004176)
+imc(not logged in)> l
+server response 0: "2 1 UU_004176" (ACK REGISTER UU_004176)
+ogin UU_004176
+sending to server: "1 2 UU_004176" (OP LOGIN UU_004176)
+imc(not logged in)> sle
+server response 0: "2 2 UU_004176" (ACK LOGIN UU_004176)
+ep 3
+sleep(3) ... 
+imc(UU_004176)> 
+Got EOF; quitting
+^^^^^^^^^
+vvvvvvvvv output out3.txt
+Connected to localhost:6855
+Type "help" for list of supported commands
+imc(not logged in)> register
+server response 0: "2 8" (ACK CONNECT)
+ UU_019120
+sending to server: "1 1 UU_019120" (OP REGISTER UU_019120)
+imc(not logged in)> login UU_019120
+sending to server: "1 2 UU_019120" (OP LOGIN UU_019120)
+imc(not logged in)> sleep 3
+sleep(3) ... 
+
+server response 0: "2 1 UU_019120" (ACK REGISTER UU_019120)
+
+server response 0: "2 2 UU_019120" (ACK LOGIN UU_019120)
+imc(UU_019120)> 
+Got EOF; quitting
+^^^^^^^^^
+vvvvvvvvv output out4.txt
+Connected to localhost:6855
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_021560
+sending to server: "1 1 UU_021560" (OP REGISTER UU_021560)
+imc(not logged in)> 
+server response 0: "2 1 UU_021560" (ACK REGISTER UU_021560)
+login UU_021560
+sending to server: "1 2 UU_021560" (OP LOGIN UU_021560)
+imc(not logged in)> sleep 3
+sleep(3) ... 
+
+server response 0: "2 2 UU_021560" (ACK LOGIN UU_021560)
+imc(UU_021560)> 
+Got EOF; quitting
+^^^^^^^^^
+vvvvvvvvv output out5.txt
+Connected to localhost:6855
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_032048
+sending to server: "1 1 UU_032048" (OP REGISTER UU_032048)
+imc(not logged in)> login UU_032048
+sending to server: "1 2 UU_032048" (OP LOGIN UU_032048)
+imc(not logged in)> sleep 
+server response 0: "2 1 UU_032048" (ACK REGISTER UU_032048)
+3
+sleep(3) ... 
+
+server response 0: "2 2 UU_032048" (ACK LOGIN UU_032048)
+imc(UU_032048)> 
+Got EOF; quitting
+^^^^^^^^^
+vvvvvvvvv output out6.txt
+Connected to localhost:6855
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_017721
+sending to server: "1 1 UU_017721" (OP REGISTER UU_017721)
+
+server response 0: "2 1 UU_017721" (ACK REGISTER UU_017721)
+imc(not logged in)> login UU_017721
+sending to server: "1 2 UU_017721" (OP LOGIN UU_017721)
+
+server response 0: "2 2 UU_017721" (ACK LOGIN UU_017721)
+imc(not logged in)> sleep 3
+sleep(3) ... 
+imc(UU_017721)> 
+Got EOF; quitting
+^^^^^^^^^
+vvvvvvvvv output out7.txt
+Connected to localhost:6855
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_013900
+sending to server: "1 1 UU_013900" (OP REGISTER UU_013900)
+imc(not logged in)> 
+server response 0: "2 1 UU_013900" (ACK REGISTER UU_013900)
+login UU_013900
+sending to server: "1 2 UU_013900" (OP LOGIN UU_013900)
+imc(not logged in)> 
+server response 0: "2 2 UU_013900" (ACK LOGIN UU_013900)
+sleep 3
+sleep(3) ... 
+imc(UU_013900)> 
+Got EOF; quitting
+^^^^^^^^^
+vvvvvvvvv output out8.txt
+Connected to localhost:6855
+
+server response 0: "2 8" (ACK CONNECT)
+Type "help" for list of supported commands
+imc(not logged in)> register UU_014914
+sending to server: "1 1 UU_014914" (OP REGISTER UU_014914)
+
+server response 0: "2 1 UU_014914" (ACK REGISTER UU_014914)
+imc(not logged in)> login UU_014914
+sending to server: "1 2 UU_014914" (OP LOGIN UU_014914)
+
+server response 0: "2 2 UU_014914" (ACK LOGIN UU_014914)
+imc(not logged in)> sleep 3
+sleep(3) ... 
+imc(UU_014914)> 
+Got EOF; quitting
+^^^^^^^^^
+vvvvvvvvv output out9.txt
+Connected to localhost:6855
+
+server response 0: "2 8" (ACK CONNECT)
+Type "help" for list of supported commands
+imc(not logged in)> register UU_011246
+sending to server: "1 1 UU_011246" (OP REGISTER UU_011246)
+
+server response 0: "2 1 UU_011246" (ACK REGISTER UU_011246)
+imc(not logged in)> login UU_011246
+sending to server: "1 2 UU_011246" (OP LOGIN UU_011246)
+imc(not logged in)> 
+server response 0: "2 2 UU_011246" (ACK LOGIN UU_011246)
+sleep 3
+sleep(3) ... 
+imc(UU_011246)> 
+Got EOF; quitting
+^^^^^^^^^
+vvvvvvvvv output out10.txt
+Connected to localhost:6855
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_030299
+sending to server: "1 1 UU_030299" (OP REGISTER UU_030299)
+imc(not logged in)> login UU_0302
+server response 0: "2 1 UU_030299" (ACK REGISTER UU_030299)
+99
+sending to server: "1 2 UU_030299" (OP LOGIN UU_030299)
+imc(not logged in)> 
+server response 0: "2 2 UU_030299" (ACK LOGIN UU_030299)
+sleep 3
+sleep(3) ... 
+imc(UU_030299)> 
+Got EOF; quitting
+^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+0 users:
+UU_023866
+.
+UU_004176
+.
+UU_019120
+.
+UU_032048
+.
+UU_021560
+.
+UU_017721
+.
+UU_013900
+.
+UU_011246
+.
+UU_014914
+.
+UU_030299
+.
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST LOGIN: 1
+########################################
+#########                   LOGOUT-01.sh 15/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+register UU_031796
+login UU_031796
+logout
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:5304
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_031796
+sending to server: "1 1 UU_031796" (OP REGISTER UU_031796)
+imc(not logged in)> lo
+server response 0: "2 1 UU_031796" (ACK REGISTER UU_031796)
+gin UU_031796
+sending to server: "1 2 UU_031796" (OP LOGIN UU_031796)
+imc(not logged in)> lo
+server response 0: "2 2 UU_031796" (ACK LOGIN UU_031796)
+gout
+sending to server: "1 3" (OP LOGOUT)
+imc(UU_031796)> sle
+server response 0: "2 3" (ACK LOGOUT)
+ep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+2 users:
+alice
+.
+bob
+.
+UU_031796
+.
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST LOGOUT: ACK CONNECT 1
+P5IMS TEST LOGOUT: ACK REGISTER 1
+P5IMS TEST LOGOUT: ACK LOGIN 1
+P5IMS TEST LOGOUT: ACK LOGOUT 1
+P5IMS TEST LOGOUT: INDB 1
+########################################
+#########                   LOGOUT-02.sh 16/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+logout
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:7886
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> logout
+sending to server: "1 3" (OP LOGOUT)
+imc(not logged in)> 
+server response 0: "3 6" (ERROR CLIENT_NOT_BOUND)
+s
+ !!! ERROR CLIENT_NOT_BOUND !!!
+leep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST LOGOUT: ERROR CLIENT_NOT_BOUND 1
+########################################
+#########                   LOGOUT-03.sh 17/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+register UU_001102
+login UU_001102
+logout
+logout
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:7611
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> register UU_001102
+sending to server: "1 1 UU_001102" (OP REGISTER UU_001102)
+imc(not logged in)> l
+server response 0: "2 1 UU_001102" (ACK REGISTER UU_001102)
+ogin UU_001102
+sending to server: "1 2 UU_001102" (OP LOGIN UU_001102)
+imc(not logged in)> 
+server response 0: "2 2 UU_001102" (ACK LOGIN UU_001102)
+logout
+sending to server: "1 3" (OP LOGOUT)
+imc(UU_001102)> 
+server response 0: "2 3" (ACK LOGOUT)
+logout
+sending to server: "1 3" (OP LOGOUT)
+imc(not logged in)> 
+server response 0: "3 6" (ERROR CLIENT_NOT_BOUND)
+
+ !!! ERROR CLIENT_NOT_BOUND !!!
+sleep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+2 users:
+alice
+.
+bob
+.
+UU_001102
+.
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST LOGOUT: ACK CONNECT 1
+P5IMS TEST LOGOUT: ACK REGISTER 1
+P5IMS TEST LOGOUT: ACK LOGIN 1
+P5IMS TEST LOGOUT: ACK LOGOUT 1
+P5IMS TEST LOGOUT: ERROR CLIENT_NOT_BOUND 1
+P5IMS TEST LOGOUT: INDB 1
+########################################
+#########                   LOGOUT-04.sh 18/49
+########################################
+vvvvvvvvv input in1.txt
+register UU_021342
+login UU_021342
+logout
+sleep 3
+^^^^^^^^^ 
+vvvvvvvvv input in2.txt
+register UU_000520
+login UU_000520
+logout
+sleep 3
+^^^^^^^^^ 
+vvvvvvvvv input in3.txt
+register UU_015693
+login UU_015693
+logout
+sleep 3
+^^^^^^^^^ 
+vvvvvvvvv input in4.txt
+register UU_007450
+login UU_007450
+logout
+sleep 3
+^^^^^^^^^ 
+vvvvvvvvv input in5.txt
+register UU_031550
+login UU_031550
+logout
+sleep 3
+^^^^^^^^^ 
+vvvvvvvvv input in6.txt
+register UU_019877
+login UU_019877
+logout
+sleep 3
+^^^^^^^^^ 
+vvvvvvvvv input in7.txt
+register UU_031825
+login UU_031825
+logout
+sleep 3
+^^^^^^^^^ 
+vvvvvvvvv input in8.txt
+register UU_003684
+login UU_003684
+logout
+sleep 3
+^^^^^^^^^ 
+vvvvvvvvv input in9.txt
+register UU_005394
+login UU_005394
+logout
+sleep 3
+^^^^^^^^^ 
+vvvvvvvvv input in10.txt
+register UU_022531
+login UU_022531
+logout
+sleep 3
+^^^^^^^^^ 
+=== sleep 5 (waiting for db-test.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv final db-test.txt
+0 users:
+UU_021342
+.
+UU_000520
+.
+UU_007450
+.
+UU_015693
+.
+UU_031550
+.
+UU_019877
+.
+UU_031825
+.
+UU_003684
+.
+UU_022531
+.
+UU_005394
+.
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST LOGIN: 1
+./LOGOUT-04.sh: line 10: 22152 Done                    ( sleep 10; echo quit )
+     22153 Killed                  | $IMS -p $PORT -d $DB -i $PAUSE &>$LOG
+########################################
+#########                   LOGOUT-05.sh 19/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login alice
+logout
+login alice
+logout
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:7318
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> l
+server response 0: "2 2 alice" (ACK LOGIN alice)
+ogout
+sending to server: "1 3" (OP LOGOUT)
+imc(alice)> l
+server response 0: "2 3" (ACK LOGOUT)
+ogin alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> 
+server response 0: "2 2 alice" (ACK LOGIN alice)
+logout
+sending to server: "1 3" (OP LOGOUT)
+imc(alice)> s
+server response 0: "2 3" (ACK LOGOUT)
+leep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST LOGOUT: ACK CONNECT 1
+P5IMS TEST LOGOUT: ACK LOGIN 1
+P5IMS TEST LOGOUT: ACK LOGOUT 1
+########################################
+#########           ADD_RM_FRIENDS-01.sh 20/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+friend_request alice
+friend_list
+friend_remove anna
+friend_remove bob
+friend_request david
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:6437
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> friend_request alice
+sending to server: "1 4 alice" (OP FRIEND_REQUEST alice)
+imc(not logged in)> fr
+server response 0: "3 6" (ERROR CLIENT_NOT_BOUND)
+i
+ !!! ERROR CLIENT_NOT_BOUND !!!
+end_list
+sending to server: "1 6" (OP FRIEND_LIST)
+imc(not logged in)> fr
+server response 0: "3 6" (ERROR CLIENT_NOT_BOUND)
+
+ !!! ERROR CLIENT_NOT_BOUND !!!
+iend_remove anna
+sending to server: "1 5 anna" (OP FRIEND_REMOVE anna)
+imc(not logged in)> fr
+server response 0: "3 6" (ERROR CLIENT_NOT_BOUND)
+
+ !!! ERROR CLIENT_NOT_BOUND !!!
+iend_remove bob
+sending to server: "1 5 bob" (OP FRIEND_REMOVE bob)
+imc(not logged in)> fr
+server response 0: "3 6" (ERROR CLIENT_NOT_BOUND)
+
+ !!! ERROR CLIENT_NOT_BOUND !!!
+iend_request david
+sending to server: "1 4 david" (OP FRIEND_REQUEST david)
+imc(not logged in)> sl
+server response 0: "3 6" (ERROR CLIENT_NOT_BOUND)
+
+ !!! ERROR CLIENT_NOT_BOUND !!!
+eep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: ERROR CLIENT_NOT_BOUND 1
+########################################
+#########           ADD_RM_FRIENDS-02.sh 21/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login bob
+friend_remove ronaldo
+friend_request jennifer
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:6824
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> fr
+server response 0: "2 2 bob" (ACK LOGIN bob)
+iend_remove ronaldo
+sending to server: "1 5 ronaldo" (OP FRIEND_REMOVE ronaldo)
+imc(bob)> frien
+server response 0: "3 4" (ERROR USER_DOES_NOT_EXIST)
+
+ !!! ERROR USER_DOES_NOT_EXIST !!!
+d_request jennifer
+sending to server: "1 4 jennifer" (OP FRIEND_REQUEST jennifer)
+imc(bob)> sleep
+server response 0: "3 4" (ERROR USER_DOES_NOT_EXIST)
+
+ !!! ERROR USER_DOES_NOT_EXIST !!!
+ 3
+sleep(3) ... 
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: ERROR USER_DOES_NOT_EXIST 1
+########################################
+#########           ADD_RM_FRIENDS-03.sh 22/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login alice
+friend_request tooooooolongusernaaaaaaame
+friend_remove doesntexist
+friend_request agaaaaaaaaintoooolongerusername
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:5413
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> f
+server response 0: "2 2 alice" (ACK LOGIN alice)
+riend_request tooooooolongusernaaaaaaame
+sending to server: "1 4 tooooooolongusernaaaaaaame" (OP FRIEND_REQUEST tooooooolongusernaaaaaaame)
+imc(alice)> f
+server response 0: "3 4" (ERROR USER_DOES_NOT_EXIST)
+
+ !!! ERROR USER_DOES_NOT_EXIST !!!
+riend_remove doesntexist
+sending to server: "1 5 doesntexist" (OP FRIEND_REMOVE doesntexist)
+imc(alice)> f
+server response 0: "3 4" (ERROR USER_DOES_NOT_EXIST)
+
+ !!! ERROR USER_DOES_NOT_EXIST !!!
+riend_request agaaaaaaaaintoooolongerusername
+sending to server: "1 4 agaaaaaaaaintoooolongerusername" (OP FRIEND_REQUEST agaaaaaaaaintoooolongerusername)
+imc(alice)> s
+server response 0: "3 4" (ERROR USER_DOES_NOT_EXIST)
+
+ !!! ERROR USER_DOES_NOT_EXIST !!!
+leep 3
+sleep(3) ... 
+imc(alice)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: ERROR USER_DOES_NOT_EXIST 1
+########################################
+#########           ADD_RM_FRIENDS-04.sh 23/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login alice
+friend_request alice
+logout
+login bob
+friend_remove bob
+logout
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:6575
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> f
+server response 0: "2 2 alice" (ACK LOGIN alice)
+riend_request alice
+sending to server: "1 4 alice" (OP FRIEND_REQUEST alice)
+imc(alice)> l
+server response 0: "3 3" (ERROR BAD_COMMAND)
+
+ !!! ERROR BAD_COMMAND !!!
+ogout
+sending to server: "1 3" (OP LOGOUT)
+imc(alice)> l
+server response 0: "2 3" (ACK LOGOUT)
+ogin bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> 
+server response 0: "2 2 bob" (ACK LOGIN bob)
+friend_remove bob
+sending to server: "1 5 bob" (OP FRIEND_REMOVE bob)
+imc(bob)> l
+server response 0: "3 3" (ERROR BAD_COMMAND)
+
+ !!! ERROR BAD_COMMAND !!!
+ogout
+sending to server: "1 3" (OP LOGOUT)
+imc(bob)> sl
+server response 0: "2 3" (ACK LOGOUT)
+eep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: ERROR BAD_COMMAND 1
+########################################
+#########           ADD_RM_FRIENDS-05.sh 24/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login alice
+friend_remove bob
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:7917
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> f
+server response 0: "2 2 alice" (ACK LOGIN alice)
+riend_remove bob
+sending to server: "1 5 bob" (OP FRIEND_REMOVE bob)
+imc(alice)> s
+server response 0: "3 7 bob" (ERROR NOT_FRIEND bob)
+
+ !!! ERROR NOT_FRIEND bob !!!
+leep 3
+sleep(3) ... 
+imc(alice)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: ERROR NOT_FRIEND 1
+########################################
+#########           ADD_RM_FRIENDS-06.sh 25/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login alice
+friend_request bob
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:6624
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> 
+server response 0: "2 2 alice" (ACK LOGIN alice)
+friend_request bob
+sending to server: "1 4 bob" (OP FRIEND_REQUEST bob)
+imc(alice)> s
+server response 0: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+
+ *** friend bob: ACTIVE_NOT ***
+leep 3
+sleep(3) ... 
+
+server response 0: "3 9 bob" (ERROR FRIEND_ALREADY bob)
+
+ !!! ERROR FRIEND_ALREADY bob !!!
+imc(alice)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: ERROR FRIEND_ALREADY 1
+########################################
+#########           ADD_RM_FRIENDS-07.sh 26/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login alice
+friend_request bob
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:5512
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> fr
+server response 0: "2 2 alice" (ACK LOGIN alice)
+iend_request bob
+sending to server: "1 4 bob" (OP FRIEND_REQUEST bob)
+imc(alice)> sle
+server response 0: "4 bob 2 0" (STATUS bob FRIEND_REQUESTED ACTIVE_NOT)
+e
+ *** bob: FRIEND_REQUESTED ***
+p 3
+sleep(3) ... 
+
+server response 0: "3 8 bob" (ERROR REQUESTED_ALREADY bob)
+
+ !!! ERROR REQUESTED_ALREADY bob !!!
+imc(alice)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: ERROR REQUESTED_ALREADY 1
+########################################
+#########           ADD_RM_FRIENDS-08.sh 27/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs
+login alice
+friend_request bob
+sleep 6
+======================
+login bob
+friend_request alice
+friend_request alice
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:5910
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> fr
+server response 0: "2 2 alice" (ACK LOGIN alice)
+iend_request bob
+sending to server: "1 4 bob" (OP FRIEND_REQUEST bob)
+imc(alice)> sle
+server response 0: "4 bob 3 0" (STATUS bob FRIEND_TOANSWER ACTIVE_NOT)
+e
+ *** bob: FRIEND_TOANSWER ***
+p 6
+sleep(6) ... 
+
+server response 0: "4 bob 4 1" (STATUS bob FRIEND_YES ACTIVE_YES)
+
+ *** friend bob: ACTIVE_YES ***
+
+server response 0: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+
+ *** friend bob: ACTIVE_NOT ***
+imc(alice)> 
+Got EOF; quitting
+====================
+Connected to localhost:5910
+Type "help" for list of supported commands
+imc(not logged in)> 
+server response 0: "2 8" (ACK CONNECT)
+login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> fr
+server response 0: "2 2 bob" (ACK LOGIN bob)
+iend_request alice
+sending to server: "1 4 alice" (OP FRIEND_REQUEST alice)
+imc(bob)> frien
+server response 0: "4 alice 2 0" (STATUS alice FRIEND_REQUESTED ACTIVE_NOT)
+
+ *** alice: FRIEND_REQUESTED ***
+d_request alice
+sending to server: "1 4 alice" (OP FRIEND_REQUEST alice)
+imc(bob)> slee
+server response 0: "4 alice 4 1" (STATUS alice FRIEND_YES ACTIVE_YES)
+
+ *** friend alice: ACTIVE_YES ***
+p 3
+sleep(3) ... 
+
+server response 0: "3 9 alice" (ERROR FRIEND_ALREADY alice)
+
+ !!! ERROR FRIEND_ALREADY alice !!!
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: ERROR FRIEND_ALREADY 1
+########################################
+#########           ADD_RM_FRIENDS-09.sh 28/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+login alice
+friend_request bob
+sleep 6
+================
+login bob
+friend_remove alice
+friend_remove alice
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:6247
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> f
+server response 0: "2 2 alice" (ACK LOGIN alice)
+riend_request bob
+sending to server: "1 4 bob" (OP FRIEND_REQUEST bob)
+imc(alice)> sl
+server response 0: "4 bob 2 0" (STATUS bob FRIEND_REQUESTED ACTIVE_NOT)
+
+ *** bob: FRIEND_REQUESTED ***
+eep 6
+sleep(6) ... 
+
+server response 0: "4 bob 1 0" (STATUS bob FRIEND_NOT ACTIVE_NOT)
+
+ *** bob: FRIEND_NOT ***
+imc(alice)> 
+Got EOF; quitting
+===================
+Connected to localhost:6247
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> f
+server response 0: "2 2 bob" (ACK LOGIN bob)
+riend_remove alice
+sending to server: "1 5 alice" (OP FRIEND_REMOVE alice)
+imc(bob)> fr
+server response 0: "4 alice 3 0" (STATUS alice FRIEND_TOANSWER ACTIVE_NOT)
+
+ *** alice: FRIEND_TOANSWER ***
+iend_remove alice
+sending to server: "1 5 alice" (OP FRIEND_REMOVE alice)
+imc(bob)> sl
+server response 0: "4 alice 1 0" (STATUS alice FRIEND_NOT ACTIVE_NOT)
+
+ *** alice: FRIEND_NOT ***
+eep 3
+sleep(3) ... 
+
+server response 0: "3 7 alice" (ERROR NOT_FRIEND alice)
+
+ !!! ERROR NOT_FRIEND alice !!!
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: ERROR NOT_FRIEND 1
+########################################
+#########           ADD_RM_FRIENDS-10.sh 29/49
+########################################
+vvvvvvvvvvv input 1
+login UU_1
+friend_request UU_2
+friend_request UU_3
+friend_request UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+sleep 5
+^^^^^^^^^^^
+vvvvvvvvvvv input 2
+login UU_2
+friend_request UU_1
+friend_request UU_3
+friend_request UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+sleep 5
+^^^^^^^^^^^
+vvvvvvvvvvv input 3
+login UU_3
+friend_request UU_1
+friend_request UU_2
+friend_request UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+sleep 5
+^^^^^^^^^^^
+vvvvvvvvvvv input 4
+login UU_4
+friend_request UU_1
+friend_request UU_2
+friend_request UU_3
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+sleep 5
+^^^^^^^^^^^
+vvvvvvvvvvv input 5
+login UU_5
+friend_request UU_1
+friend_request UU_2
+friend_request UU_3
+friend_request UU_4
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+sleep 5
+^^^^^^^^^^^
+vvvvvvvvvvv input 6
+login UU_6
+friend_request UU_1
+friend_request UU_2
+friend_request UU_3
+friend_request UU_4
+friend_request UU_5
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+sleep 5
+^^^^^^^^^^^
+vvvvvvvvvvv input 7
+login UU_7
+friend_request UU_1
+friend_request UU_2
+friend_request UU_3
+friend_request UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+sleep 5
+^^^^^^^^^^^
+vvvvvvvvvvv input 8
+login UU_8
+friend_request UU_1
+friend_request UU_2
+friend_request UU_3
+friend_request UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_9
+friend_request UU_10
+sleep 5
+^^^^^^^^^^^
+vvvvvvvvvvv input 9
+login UU_9
+friend_request UU_1
+friend_request UU_2
+friend_request UU_3
+friend_request UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_10
+sleep 5
+^^^^^^^^^^^
+vvvvvvvvvvv input 10
+login UU_10
+friend_request UU_1
+friend_request UU_2
+friend_request UU_3
+friend_request UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+sleep 5
+^^^^^^^^^^^
+=== sleep 5 (waiting for db-test1.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv got database db-test1.txt
+10 users:
+UU_1
+- UU_2
+- UU_3
+- UU_4
+- UU_5
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_2
+- UU_1
+- UU_3
+- UU_4
+- UU_5
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_3
+- UU_1
+- UU_2
+- UU_4
+- UU_5
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_4
+- UU_1
+- UU_3
+- UU_2
+- UU_5
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_5
+- UU_1
+- UU_3
+- UU_2
+- UU_4
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_6
+- UU_1
+- UU_3
+- UU_2
+- UU_4
+- UU_5
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_7
+- UU_1
+- UU_3
+- UU_2
+- UU_4
+- UU_5
+- UU_6
+- UU_8
+- UU_9
+- UU_10
+.
+UU_8
+- UU_1
+- UU_3
+- UU_2
+- UU_4
+- UU_5
+- UU_6
+- UU_7
+- UU_9
+- UU_10
+.
+UU_9
+- UU_1
+- UU_3
+- UU_2
+- UU_4
+- UU_6
+- UU_5
+- UU_7
+- UU_8
+- UU_10
+.
+UU_10
+- UU_3
+- UU_2
+- UU_1
+- UU_4
+- UU_6
+- UU_5
+- UU_7
+- UU_8
+- UU_9
+.
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv expected database db-test2.txt
+10 users:
+UU_1
+- UU_2
+- UU_3
+- UU_4
+- UU_5
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_2
+- UU_1
+- UU_3
+- UU_4
+- UU_5
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_3
+- UU_1
+- UU_2
+- UU_4
+- UU_5
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_4
+- UU_1
+- UU_2
+- UU_3
+- UU_5
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_5
+- UU_1
+- UU_2
+- UU_3
+- UU_4
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_6
+- UU_1
+- UU_2
+- UU_3
+- UU_4
+- UU_5
+- UU_7
+- UU_8
+- UU_9
+- UU_10
+.
+UU_7
+- UU_1
+- UU_2
+- UU_3
+- UU_4
+- UU_5
+- UU_6
+- UU_8
+- UU_9
+- UU_10
+.
+UU_8
+- UU_1
+- UU_2
+- UU_3
+- UU_4
+- UU_5
+- UU_6
+- UU_7
+- UU_9
+- UU_10
+.
+UU_9
+- UU_1
+- UU_2
+- UU_3
+- UU_4
+- UU_5
+- UU_6
+- UU_7
+- UU_8
+- UU_10
+.
+UU_10
+- UU_1
+- UU_2
+- UU_3
+- UU_4
+- UU_5
+- UU_6
+- UU_7
+- UU_8
+- UU_9
+.
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv difference between canonical(db we got) and canonical(db we expect)
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: 1
+########################################
+#########           ADD_RM_FRIENDS-11.sh 30/49
+########################################
+=== echo starting server for 15
+vvvvvvvvvvvvvvv input in1.txt (A)
+login UU_1
+friend_request UU_2
+friend_request UU_3
+friend_request UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+logout UU_1
+sleep 3
+vvvvvvvvvvvvvvv input in2.txt (A)
+login UU_2
+friend_request UU_3
+friend_request UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+logout UU_2
+sleep 3
+vvvvvvvvvvvvvvv input in3.txt (A)
+login UU_3
+friend_request UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+logout UU_3
+sleep 3
+vvvvvvvvvvvvvvv input in4.txt (A)
+login UU_4
+friend_request UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+logout UU_4
+sleep 3
+vvvvvvvvvvvvvvv input in5.txt (A)
+login UU_5
+friend_request UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+logout UU_5
+sleep 3
+vvvvvvvvvvvvvvv input in6.txt (A)
+login UU_6
+friend_request UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+logout UU_6
+sleep 3
+vvvvvvvvvvvvvvv input in7.txt (A)
+login UU_7
+friend_request UU_8
+friend_request UU_9
+friend_request UU_10
+logout UU_7
+sleep 3
+vvvvvvvvvvvvvvv input in8.txt (A)
+login UU_8
+friend_request UU_9
+friend_request UU_10
+logout UU_8
+sleep 3
+vvvvvvvvvvvvvvv input in9.txt (A)
+login UU_9
+friend_request UU_10
+logout UU_9
+sleep 3
+vvvvvvvvvvvvvvv input in10.txt (A)
+login UU_10
+logout UU_10
+sleep 3
+^^^^^^^^^^^^^^^
+=== starting client 1 (A)
+=== starting client 2 (A)
+=== starting client 3 (A)
+=== starting client 4 (A)
+=== starting client 5 (A)
+=== starting client 6 (A)
+=== starting client 7 (A)
+=== starting client 8 (A)
+=== starting client 9 (A)
+=== starting client 10 (A)
+vvvvvvvvvvvvvvv input in1.txt (B)
+login UU_1
+logout UU_1
+sleep 3
+vvvvvvvvvvvvvvv input in2.txt (B)
+login UU_2
+friend_remove UU_1
+logout UU_2
+sleep 3
+vvvvvvvvvvvvvvv input in3.txt (B)
+login UU_3
+friend_remove UU_1
+friend_remove UU_2
+logout UU_3
+sleep 3
+vvvvvvvvvvvvvvv input in4.txt (B)
+login UU_4
+friend_remove UU_1
+friend_remove UU_2
+friend_remove UU_3
+logout UU_4
+sleep 3
+vvvvvvvvvvvvvvv input in5.txt (B)
+login UU_5
+friend_remove UU_1
+friend_remove UU_2
+friend_remove UU_3
+friend_remove UU_4
+logout UU_5
+sleep 3
+vvvvvvvvvvvvvvv input in6.txt (B)
+login UU_6
+friend_remove UU_1
+friend_remove UU_2
+friend_remove UU_3
+friend_remove UU_4
+friend_remove UU_5
+logout UU_6
+sleep 3
+vvvvvvvvvvvvvvv input in7.txt (B)
+login UU_7
+friend_remove UU_1
+friend_remove UU_2
+friend_remove UU_3
+friend_remove UU_4
+friend_remove UU_5
+friend_remove UU_6
+logout UU_7
+sleep 3
+vvvvvvvvvvvvvvv input in8.txt (B)
+login UU_8
+friend_remove UU_1
+friend_remove UU_2
+friend_remove UU_3
+friend_remove UU_4
+friend_remove UU_5
+friend_remove UU_6
+friend_remove UU_7
+logout UU_8
+sleep 3
+vvvvvvvvvvvvvvv input in9.txt (B)
+login UU_9
+friend_remove UU_1
+friend_remove UU_2
+friend_remove UU_3
+friend_remove UU_4
+friend_remove UU_5
+friend_remove UU_6
+friend_remove UU_7
+friend_remove UU_8
+logout UU_9
+sleep 3
+vvvvvvvvvvvvvvv input in10.txt (B)
+login UU_10
+friend_remove UU_1
+friend_remove UU_2
+friend_remove UU_3
+friend_remove UU_4
+friend_remove UU_5
+friend_remove UU_6
+friend_remove UU_7
+friend_remove UU_8
+friend_remove UU_9
+logout UU_10
+sleep 3
+^^^^^^^^^^^^^^^
+=== starting client 1 (B)
+=== starting client 2 (B)
+=== starting client 3 (B)
+=== starting client 4 (B)
+=== starting client 5 (B)
+=== starting client 6 (B)
+=== starting client 7 (B)
+=== starting client 8 (B)
+=== starting client 9 (B)
+=== starting client 10 (B)
+=== sleep 5 (waiting for db-test1.txt to be re-written)
+vvvvvvvvvvvvvvvvvvvvv got database db-test1.txt
+10 users:
+UU_1
+.
+UU_2
+.
+UU_3
+.
+UU_4
+.
+UU_5
+.
+UU_6
+.
+UU_7
+.
+UU_8
+.
+UU_9
+.
+UU_10
+.
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv expected database db-test2.txt
+10 users:
+UU_1
+.
+UU_2
+.
+UU_3
+.
+UU_4
+.
+UU_5
+.
+UU_6
+.
+UU_7
+.
+UU_8
+.
+UU_9
+.
+UU_10
+.
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv difference between canonical(db we got) and canonical(db we expect)
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST ADD_RM_FRIENDS: 1
+./ADD_RM_FRIENDS-11.sh: line 10: 22713 Done                    ( sleep 15; echo quit )
+     22714 Killed                  | $IMS -p $PORT -d $DB1 -i $PAUSE &>$LOG
+########################################
+#########            FRIEND_STATUS-01.sh 31/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login bob
+friend_list
+sleep 6
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:6691
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> f
+server response 0: "2 2 bob" (ACK LOGIN bob)
+riend_list
+sending to server: "1 6" (OP FRIEND_LIST)
+imc(bob)> sl
+server response 0: "4 alice 4 0" (STATUS alice FRIEND_YES ACTIVE_NOT)
+
+ *** friend alice: ACTIVE_NOT ***
+server response 1: "4 david 4 0" (STATUS david FRIEND_YES ACTIVE_NOT)
+
+ *** friend david: ACTIVE_NOT ***
+eep 6
+sleep(6) ... 
+
+server response 0: "4 alice 4 0" (STATUS alice FRIEND_YES ACTIVE_NOT)
+
+ *** friend alice: ACTIVE_NOT ***
+server response 1: "4 david 4 0" (STATUS david FRIEND_YES ACTIVE_NOT)
+
+ *** friend david: ACTIVE_NOT ***
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_STATUS: STAT MSGS1 1
+P5IMS TEST FRIEND_STATUS: STAT MSGS1 1
+########################################
+#########            FRIEND_STATUS-02.sh 32/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login alice
+friend_list
+sleep 6
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:5338
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> f
+server response 0: "2 2 alice" (ACK LOGIN alice)
+riend_list
+sending to server: "1 6" (OP FRIEND_LIST)
+imc(alice)> sl
+server response 0: "4 david 3 0" (STATUS david FRIEND_TOANSWER ACTIVE_NOT)
+
+ *** david: FRIEND_TOANSWER ***
+server response 1: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+
+ *** friend bob: ACTIVE_NOT ***
+eep 6
+sleep(6) ... 
+
+server response 0: "4 david 3 0" (STATUS david FRIEND_TOANSWER ACTIVE_NOT)
+
+ *** david: FRIEND_TOANSWER ***
+server response 1: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+
+ *** friend bob: ACTIVE_NOT ***
+imc(alice)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_STATUS: STAT MSGS1 1
+P5IMS TEST FRIEND_STATUS: STAT MSGS1 1
+########################################
+#########            FRIEND_STATUS-03.sh 33/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+login alice
+sleep 3
+friend_request bob
+sleep 3
+=============
+login bob
+sleep 6
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:7475
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> s
+server response 0: "2 2 alice" (ACK LOGIN alice)
+leep 3
+sleep(3) ... 
+imc(alice)> friend_request bob
+sending to server: "1 4 bob" (OP FRIEND_REQUEST bob)
+imc(alice)> sle
+server response 0: "4 bob 2 0" (STATUS bob FRIEND_REQUESTED ACTIVE_NOT)
+
+ *** bob: FRIEND_REQUESTED ***
+ep 3
+sleep(3) ... 
+imc(alice)> 
+Got EOF; quitting
+==============
+Connected to localhost:7475
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> s
+server response 0: "2 2 bob" (ACK LOGIN bob)
+leep 6
+sleep(6) ... 
+
+server response 0: "4 alice 3 0" (STATUS alice FRIEND_TOANSWER ACTIVE_NOT)
+
+ *** alice: FRIEND_TOANSWER ***
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_STATUS: GOT MSGS 1
+########################################
+#########            FRIEND_STATUS-04.sh 34/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+login alice
+sleep 3
+friend_remove bob
+sleep 3
+===============
+login bob
+sleep 6
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:5559
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> 
+server response 0: "2 2 alice" (ACK LOGIN alice)
+sleep 3
+sleep(3) ... 
+imc(alice)> friend_remove bob
+sending to server: "1 5 bob" (OP FRIEND_REMOVE bob)
+imc(alice)> sleep
+server response 0: "3 7 bob" (ERROR NOT_FRIEND bob)
+
+ !!! ERROR NOT_FRIEND bob !!!
+ 3
+sleep(3) ... 
+imc(alice)> 
+Got EOF; quitting
+===============
+Connected to localhost:5559
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> 
+server response 0: "2 2 bob" (ACK LOGIN bob)
+sleep 6
+sleep(6) ... 
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_STATUS: GOT MSGS 1
+########################################
+#########            FRIEND_STATUS-05.sh 35/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs
+login alice
+sleep 3
+friend_request bob
+sleep 3
+=============
+login bob
+sleep 6
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs
+Connected to localhost:6336
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> 
+server response 0: "2 2 alice" (ACK LOGIN alice)
+sleep 3
+sleep(3) ... 
+
+server response 0: "4 bob 3 0" (STATUS bob FRIEND_TOANSWER ACTIVE_NOT)
+
+ *** bob: FRIEND_TOANSWER ***
+imc(alice)> friend_request bob
+sending to server: "1 4 bob" (OP FRIEND_REQUEST bob)
+imc(alice)> sle
+server response 0: "4 bob 4 1" (STATUS bob FRIEND_YES ACTIVE_YES)
+
+ *** friend bob: ACTIVE_YES ***
+ep 3
+sleep(3) ... 
+imc(alice)> 
+Got EOF; quitting
+=============
+Connected to localhost:6336
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> s
+server response 0: "2 2 bob" (ACK LOGIN bob)
+leep 6
+sleep(6) ... 
+
+server response 0: "4 alice 2 0" (STATUS alice FRIEND_REQUESTED ACTIVE_NOT)
+
+ *** alice: FRIEND_REQUESTED ***
+
+server response 0: "4 alice 4 1" (STATUS alice FRIEND_YES ACTIVE_YES)
+
+ *** friend alice: ACTIVE_YES ***
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_STATUS: GOT MSGS 1
+########################################
+#########            FRIEND_STATUS-06.sh 36/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+login alice
+sleep 6
+friend_remove bob
+sleep 3
+----------------
+login bob
+sleep 8
+----------------
+login david
+sleep 6
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:5487
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> s
+server response 0: "2 2 alice" (ACK LOGIN alice)
+leep 6
+sleep(6) ... 
+
+server response 0: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+
+ *** friend bob: ACTIVE_NOT ***
+server response 1: "4 david 4 0" (STATUS david FRIEND_YES ACTIVE_NOT)
+
+ *** friend david: ACTIVE_NOT ***
+server response 2: "4 david 4 1" (STATUS david FRIEND_YES ACTIVE_YES)
+
+ *** friend david: ACTIVE_YES ***
+server response 3: "4 bob 4 1" (STATUS bob FRIEND_YES ACTIVE_YES)
+
+ *** friend bob: ACTIVE_YES ***
+imc(alice)> friend_remove bob
+sending to server: "1 5 bob" (OP FRIEND_REMOVE bob)
+imc(alice)> sl
+server response 0: "4 bob 1 0" (STATUS bob FRIEND_NOT ACTIVE_NOT)
+e
+ *** bob: FRIEND_NOT ***
+ep 3
+sleep(3) ... 
+
+server response 0: "4 david 4 0" (STATUS david FRIEND_YES ACTIVE_NOT)
+
+ *** friend david: ACTIVE_NOT ***
+imc(alice)> 
+Got EOF; quitting
+----------------
+Connected to localhost:5487
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> s
+server response 0: "2 2 bob" (ACK LOGIN bob)
+leep 8
+sleep(8) ... 
+
+server response 0: "4 alice 4 1" (STATUS alice FRIEND_YES ACTIVE_YES)
+
+ *** friend alice: ACTIVE_YES ***
+server response 1: "4 david 4 1" (STATUS david FRIEND_YES ACTIVE_YES)
+
+ *** friend david: ACTIVE_YES ***
+
+server response 0: "4 alice 1 0" (STATUS alice FRIEND_NOT ACTIVE_NOT)
+
+ *** alice: FRIEND_NOT ***
+
+server response 0: "4 david 4 0" (STATUS david FRIEND_YES ACTIVE_NOT)
+
+ *** friend david: ACTIVE_NOT ***
+imc(bob)> 
+Got EOF; quitting
+----------------
+Connected to localhost:5487
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login david
+sending to server: "1 2 david" (OP LOGIN david)
+imc(not logged in)> 
+server response 0: "2 2 david" (ACK LOGIN david)
+sleep 6
+sleep(6) ... 
+
+server response 0: "4 alice 4 1" (STATUS alice FRIEND_YES ACTIVE_YES)
+
+ *** friend alice: ACTIVE_YES ***
+server response 1: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+
+ *** friend bob: ACTIVE_NOT ***
+server response 2: "4 bob 4 1" (STATUS bob FRIEND_YES ACTIVE_YES)
+
+ *** friend bob: ACTIVE_YES ***
+imc(david)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_STATUS: GOT MSGS 1
+########################################
+#########            FRIEND_STATUS-07.sh 37/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+login alice
+sleep 3
+logout
+sleep 6
+=================
+sleep 1
+login bob
+sleep 6
+logout
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:5305
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> sl
+server response 0: "2 2 alice" (ACK LOGIN alice)
+eep 3
+sleep(3) ... 
+
+server response 0: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+
+ *** friend bob: ACTIVE_NOT ***
+
+server response 0: "4 bob 4 1" (STATUS bob FRIEND_YES ACTIVE_YES)
+
+ *** friend bob: ACTIVE_YES ***
+imc(alice)> logout
+sending to server: "1 3" (OP LOGOUT)
+imc(alice)> sl
+server response 0: "2 3" (ACK LOGOUT)
+eep 6
+sleep(6) ... 
+imc(not logged in)> 
+Got EOF; quitting
+=================
+Connected to localhost:5305
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> sleep 1
+sleep(1) ... 
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> sl
+server response 0: "2 2 bob" (ACK LOGIN bob)
+server response 1: "4 alice 4 1" (STATUS alice FRIEND_YES ACTIVE_YES)
+
+ *** friend alice: ACTIVE_YES ***
+eep 6
+sleep(6) ... 
+
+server response 0: "4 alice 4 0" (STATUS alice FRIEND_YES ACTIVE_NOT)
+
+ *** friend alice: ACTIVE_NOT ***
+imc(bob)> logout
+sending to server: "1 3" (OP LOGOUT)
+imc(bob)> slee
+server response 0: "2 3" (ACK LOGOUT)
+p 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: GOT MSS 1
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+########################################
+#########            FRIEND_STATUS-08.sh 38/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+login alice
+sleep 3
+logout
+sleep 3
+=======================
+sleep 2
+login bob
+sleep 6
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: DID GOT MSG (which is expected here) 1
+P5IMS TEST FRIEND_STATUS: DID GOT MSG (which is expected here) 1
+########################################
+#########            FRIEND_STATUS-09.sh 39/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+login alice
+sleep 6
+friend_request bob
+logout
+sleep 3
+==========================
+sleep 2
+login bob
+friend_request alice
+sleep 6
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:6356
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> 
+server response 0: "2 2 alice" (ACK LOGIN alice)
+sleep 6
+sleep(6) ... 
+
+server response 0: "4 bob 3 0" (STATUS bob FRIEND_TOANSWER ACTIVE_NOT)
+
+ *** bob: FRIEND_TOANSWER ***
+imc(alice)> friend_request bob
+sending to server: "1 4 bob" (OP FRIEND_REQUEST bob)
+imc(alice)> log
+server response 0: "4 bob 4 1" (STATUS bob FRIEND_YES ACTIVE_YES)
+o
+ *** friend bob: ACTIVE_YES ***
+ut
+sending to server: "1 3" (OP LOGOUT)
+imc(alice)> sle
+server response 0: "2 3" (ACK LOGOUT)
+ep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+==========================
+Connected to localhost:6356
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> sleep 2
+sleep(2) ... 
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> fr
+server response 0: "2 2 bob" (ACK LOGIN bob)
+iend_request alice
+sending to server: "1 4 alice" (OP FRIEND_REQUEST alice)
+imc(bob)> sleep
+server response 0: "4 alice 2 0" (STATUS alice FRIEND_REQUESTED ACTIVE_NOT)
+
+ *** alice: FRIEND_REQUESTED ***
+ 6
+sleep(6) ... 
+
+server response 0: "4 alice 4 1" (STATUS alice FRIEND_YES ACTIVE_YES)
+
+ *** friend alice: ACTIVE_YES ***
+
+server response 0: "4 alice 4 0" (STATUS alice FRIEND_YES ACTIVE_NOT)
+
+ *** friend alice: ACTIVE_NOT ***
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+########################################
+#########            FRIEND_STATUS-10.sh 40/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+login alice
+friend_request bob
+logout
+sleep 6
+login alice
+sleep 1
+===============
+sleep 2
+login bob
+friend_request alice
+logout
+sleep 5
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:6703
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> f
+server response 0: "2 2 alice" (ACK LOGIN alice)
+riend_request bob
+sending to server: "1 4 bob" (OP FRIEND_REQUEST bob)
+imc(alice)> l
+server response 0: "4 bob 2 0" (STATUS bob FRIEND_REQUESTED ACTIVE_NOT)
+o
+ *** bob: FRIEND_REQUESTED ***
+gout
+sending to server: "1 3" (OP LOGOUT)
+imc(alice)> s
+server response 0: "2 3" (ACK LOGOUT)
+leep 6
+sleep(6) ... 
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> s
+server response 0: "2 2 alice" (ACK LOGIN alice)
+server response 1: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+
+ *** friend bob: ACTIVE_NOT ***
+leep 1
+sleep(1) ... 
+imc(alice)> 
+Got EOF; quitting
+===============
+Connected to localhost:6703
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> sleep 2
+sleep(2) ... 
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> friend_request alic
+server response 0: "2 2 bob" (ACK LOGIN bob)
+server response 1: "4 alice 3 0" (STATUS alice FRIEND_TOANSWER ACTIVE_NOT)
+
+ *** alice: FRIEND_TOANSWER ***
+e
+sending to server: "1 4 alice" (OP FRIEND_REQUEST alice)
+imc(bob)> logou
+server response 0: "4 alice 4 0" (STATUS alice FRIEND_YES ACTIVE_NOT)
+
+ *** friend alice: ACTIVE_NOT ***
+t
+sending to server: "1 3" (OP LOGOUT)
+imc(bob)> sleep
+server response 0: "2 3" (ACK LOGOUT)
+ 5
+sleep(5) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+P5IMS TEST FRIEND_STATUS: GOT MSG 1
+########################################
+#########                FRIEND_IM-01.sh 41/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+im alice "Hello alice"
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:7779
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> im alice "Hello alice"
+sending to server: "1 7 alice "Hello alice"" (OP IM alice "Hello alice")
+imc(not logged in)> 
+server response 0: "3 6" (ERROR CLIENT_NOT_BOUND)
+
+ !!! ERROR CLIENT_NOT_BOUND !!!
+sleep 3
+sleep(3) ... 
+imc(not logged in)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_IM: ERROR CLIENT_NOT_BOUND 1
+########################################
+#########                FRIEND_IM-02.sh 42/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login alice
+im david "Hello david"
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:7754
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> i
+server response 0: "2 2 alice" (ACK LOGIN alice)
+m david "Hello david"
+sending to server: "1 7 david "Hello david"" (OP IM david "Hello david")
+imc(alice)> slee
+server response 0: "3 4" (ERROR USER_DOES_NOT_EXIST)
+p
+ !!! ERROR USER_DOES_NOT_EXIST !!!
+ 3
+sleep(3) ... 
+imc(alice)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_IM: ERROR USER_DOES_NOT_EXIST 1
+########################################
+#########                FRIEND_IM-03.sh 43/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login bob
+im alice "Hello alice"
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:5572
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> 
+server response 0: "2 2 bob" (ACK LOGIN bob)
+im alice "Hello alice"
+sending to server: "1 7 alice "Hello alice"" (OP IM alice "Hello alice")
+imc(bob)> s
+server response 0: "4 alice 3 0" (STATUS alice FRIEND_TOANSWER ACTIVE_NOT)
+
+ *** alice: FRIEND_TOANSWER ***
+leep 3
+sleep(3) ... 
+
+server response 0: "3 7 alice" (ERROR NOT_FRIEND alice)
+
+ !!! ERROR NOT_FRIEND alice !!!
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_IM: ERROR NOT_FRIEND 1
+########################################
+#########                FRIEND_IM-04.sh 44/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc input:
+login bob
+im alice "Hello alice"
+sleep 3
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc output:
+Connected to localhost:5418
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> i
+server response 0: "2 2 bob" (ACK LOGIN bob)
+m alice "Hello alice"
+sending to server: "1 7 alice "Hello alice"" (OP IM alice "Hello alice")
+imc(bob)> sl
+server response 0: "4 alice 4 0" (STATUS alice FRIEND_YES ACTIVE_NOT)
+
+ *** friend alice: ACTIVE_NOT ***
+eep 3
+sleep(3) ... 
+
+server response 0: "3 10 alice" (ERROR USER_NOT_ACTIVE alice)
+
+ !!! ERROR USER_NOT_ACTIVE alice !!!
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_IM: ERROR USER_NOT_ACTIVE 1
+########################################
+#########                FRIEND_IM-05.sh 45/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+login alice
+sleep 6
+================
+login bob
+sleep 1
+im alice aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+im alice aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+sleep 4
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:5738
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> s
+server response 0: "2 2 alice" (ACK LOGIN alice)
+leep 6
+sleep(6) ... 
+
+server response 0: "4 bob 4 1" (STATUS bob FRIEND_YES ACTIVE_YES)
+
+ *** friend bob: ACTIVE_YES ***
+
+server response 0: "1 7 bob aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" (OP IM bob aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+
+ *** bob says "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ***
+
+server response 0: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+
+ *** friend bob: ACTIVE_NOT ***
+imc(alice)> 
+Got EOF; quitting
+==============
+Connected to localhost:5738
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> s
+server response 0: "2 2 bob" (ACK LOGIN bob)
+leep 1
+sleep(1) ... 
+
+server response 0: "4 alice 4 0" (STATUS alice FRIEND_YES ACTIVE_NOT)
+
+ *** friend alice: ACTIVE_NOT ***
+server response 1: "4 alice 4 1" (STATUS alice FRIEND_YES ACTIVE_YES)
+
+ *** friend alice: ACTIVE_YES ***
+imc(bob)> im alice aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaa
+sending to server: "1 7 alice aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" (OP IM alice aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+imc(bob)> im alic
+server response 0: "3 3" (ERROR BAD_COMMAND)
+
+ !!! ERROR BAD_COMMAND !!!
+e aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaaaaaaaaaaaaaaaa                         aaaaaaaaaaa
+sending to server: "1 7 alice aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" (OP IM alice aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+imc(bob)> sleep 4
+
+server response 0: "2 7 alice" (ACK IM alice)
+sleep(4) ... 
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_IM: ERROR BAD_COMMAND 1
+./FRIEND_IM-05.sh: line 10: 23358 Done                    ( sleep 6; echo quit )
+     23359 Killed                  | $IMS -p $PORT -d $DB -i $PAUSE &>$LOG
+########################################
+#########                FRIEND_IM-06.sh 46/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+login alice
+sleep 4
+================
+login bob
+sleep 1
+im alice Hello alice
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:7130
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> 
+server response 0: "2 2 alice" (ACK LOGIN alice)
+sleep 4
+getServerStr: server closed connection
+getTextInput: server connection closed; we are done
+sleep(4) ... 
+
+server response 0: "4 bob 4 1" (STATUS bob FRIEND_YES ACTIVE_YES)
+
+ *** friend bob: ACTIVE_YES ***
+
+server response 0: "1 7 bob Hello alice" (OP IM bob Hello alice)
+
+ *** bob says "Hello alice" ***
+================
+Connected to localhost:7130
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> s
+server response 0: "2 2 bob" (ACK LOGIN bob)
+leep 1
+sleep(1) ... 
+
+server response 0: "4 alice 4 0" (STATUS alice FRIEND_YES ACTIVE_NOT)
+
+ *** friend alice: ACTIVE_NOT ***
+server response 1: "4 alice 4 1" (STATUS alice FRIEND_YES ACTIVE_YES)
+
+ *** friend alice: ACTIVE_YES ***
+imc(bob)> im alice Hello alice
+sending to server: "1 7 alice Hello alice" (OP IM alice Hello alice)
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_IM: GOT MSG 1
+########################################
+#########                FRIEND_IM-07.sh 47/49
+########################################
+vvvvvvvvvvvvvvvvvvvvv txtimc inputs:
+login alice
+sleep 4
+im bob Hello bob
+sleep 4
+=================
+login bob
+sleep 4
+im alice Hello alice
+sleep 4
+^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvv txtimc outputs:
+Connected to localhost:5975
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login alice
+sending to server: "1 2 alice" (OP LOGIN alice)
+imc(not logged in)> 
+server response 0: "2 2 alice" (ACK LOGIN alice)
+sleep 4
+sleep(4) ... 
+
+server response 0: "4 bob 4 0" (STATUS bob FRIEND_YES ACTIVE_NOT)
+
+ *** friend bob: ACTIVE_NOT ***
+server response 1: "4 bob 4 1" (STATUS bob FRIEND_YES ACTIVE_YES)
+
+ *** friend bob: ACTIVE_YES ***
+imc(alice)> im bob Hello bob
+sending to server: "1 7 bob Hello bob" (OP IM bob Hello bob)
+imc(alice)> slee
+server response 0: "2 7 bob" (ACK IM bob)
+p 4
+sleep(4) ... 
+
+server response 0: "1 7 bob Hello alice" (OP IM bob Hello alice)
+
+ *** bob says "Hello alice" ***
+imc(alice)> 
+Got EOF; quitting
+=================
+Connected to localhost:5975
+Type "help" for list of supported commands
+
+server response 0: "2 8" (ACK CONNECT)
+imc(not logged in)> login bob
+sending to server: "1 2 bob" (OP LOGIN bob)
+imc(not logged in)> s
+server response 0: "2 2 bob" (ACK LOGIN bob)
+leep 4
+sleep(4) ... 
+
+server response 0: "4 alice 4 1" (STATUS alice FRIEND_YES ACTIVE_YES)
+
+ *** friend alice: ACTIVE_YES ***
+imc(bob)> im alice Hello 
+server response 0: "1 7 alice Hello bob" (OP IM alice Hello bob)
+
+ *** alice says "Hello bob" ***
+alice
+sending to server: "1 7 alice Hello alice" (OP IM alice Hello alice)
+imc(bob)> slee
+server response 0: "2 7 alice" (ACK IM alice)
+p 4
+sleep(4) ... 
+imc(bob)> 
+Got EOF; quitting
+^^^^^^^^^^^^^^^^^^^^^
+P5IMS TEST FRIEND_IM: GOT MSGS 1
+########################################
+#########                        QUIT.sh 48/49
+########################################
+running (sleep 3; echo quit) | valgrind --leak-check=yes --track-fds=yes ../ims -p 5071 -d db-test.txt -i 100 &> log.txt &
+sleep 6 to wait for quit to work
+killing ims 23471
+./QUIT.sh: line 110: 23470 Done                    ( sleep 3; echo quit )
+     23471 Killed                  | valgrind --leak-check=yes --track-fds=yes $IMS -p $PORT -d $DB -i 100 &>$LOG
+bad: Valgrind didn't do its final report, implying that server didn't exit upon getting quit on stdin.
+==23471== Memcheck, a memory error detector
+==23471== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==23471== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==23471== Command: ../ims -p 5071 -d db-test.txt -i 100
+==23471== 
+QUIT.sh 0/5

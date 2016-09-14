@@ -1,0 +1,133 @@
+leogladkov p4shell grade: 100/100 
+ 
+https://phoenixforge.cs.uchicago.edu/svn/leogladkov-cs154-2015/p4shell 
+Grading revision: 243 
+
+$ make
+gcc -Wall -Werror -o myshell myshell.c
+
+$ ./test-scripts/grade.py
+----------------------------------
+Running batch file: gooduser_basic
+Diffing gooduser_basic.stdout
+
+
+Diffing gooduser_basic.stderr
+
+
+gooduser_basic      8	8
+----------------------------------
+Running batch file: gooduser_args
+Diffing gooduser_args.stdout
+
+
+Diffing gooduser_args.stderr
+
+
+gooduser_args       8	8
+----------------------------------
+Running batch file: gooduser_rd
+Diffing gooduser_rd.stdout
+
+
+Diffing gooduser_rd.stderr
+
+
+gooduser_rd         8	8
+----------------------------------
+Running batch file: gooduser_multipleCommand
+Diffing gooduser_multipleCommand.stdout
+
+
+Diffing gooduser_multipleCommand.stderr
+
+
+gooduser_multipleCommand8	8
+----------------------------------
+Running batch file: buildin_wrongFormat
+Diffing buildin_wrongFormat.stdout
+
+
+Diffing buildin_wrongFormat.stderr
+
+
+buildin_wrongFormat 8	8
+----------------------------------
+Running batch file: cd_toFolderNotExist
+Diffing cd_toFolderNotExist.stdout
+
+
+Diffing cd_toFolderNotExist.stderr
+
+
+cd_toFolderNotExist 3	3
+----------------------------------
+Running batch file: badCommand
+Diffing badCommand.stdout
+
+
+Diffing badCommand.stderr
+
+
+badCommand          5	5
+----------------------------------
+Running batch file: complexCommand
+Diffing complexCommand.stdout
+
+
+Diffing complexCommand.stderr
+
+
+complexCommand      8	8
+----------------------------------
+Running batch file: multipleCommand
+Diffing multipleCommand.stdout
+
+
+Diffing multipleCommand.stderr
+
+
+multipleCommand     12	12
+----------------------------------
+Running batch file: complexRedirection_format
+Diffing complexRedirection_format.stdout
+
+
+Diffing complexRedirection_format.stderr
+
+
+complexRedirection_format9	9
+----------------------------------
+Running batch file: complexRedirection_illegal
+Diffing complexRedirection_illegal.stdout
+
+
+Diffing complexRedirection_illegal.stderr
+
+
+complexRedirection_illegal9	9
+----------------------------------
+Running batch file: emptyInput
+Diffing emptyInput.stdout
+
+
+Diffing emptyInput.stderr
+
+
+emptyInput          1	1
+----------------------------------
+Running batch file: 1KCommand
+Diffing 1KCommand.stdout
+
+
+Diffing 1KCommand.stderr
+
+
+1KCommand           3	3
+two arguments       2	2
+does not exist      2	2
+File name           1	1
+Makefile and README 5	5
+total               100	100
+
+Final Grade: 100
